@@ -8,4 +8,11 @@
 
 
 // DOCUMENT READY FUNCTION BELOW
+$("search").val()
 
+$("button").click(function() { 
+    $("#userChoice").text($("#input").val());
+});
+
+
+    
