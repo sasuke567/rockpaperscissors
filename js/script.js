@@ -4,15 +4,28 @@
 
 //GLOBAL VARIABLES
 /* global $ */
-
-
+var randomNumber = 0;
+var userChoice = "";
+var computerChoice = "";
 
 // DOCUMENT READY FUNCTION BELOW
 $("search").val()
 
 $("button").click(function() { 
-    $("#userChoice").text($("#input").val());
+    userChoice = $("#input").val()
+    $("#userChoice").text(userChoice);
+    
+    randomNumber = Math.random()
+    if(randomNumber >.66){
+        computerChoice = "rock";
+    
+    } else if(randomNumber>.33){
+        computerChoice = "scissors";
+        
+    } else {
+        computerChoice = "paper";
+}
+    computerChoice
 });
 
-
-    
+ 
